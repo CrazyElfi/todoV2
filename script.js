@@ -1,3 +1,29 @@
+// function FunctionArray (count) {
+//   var arr = []
+//   for(var i=0; i<count; i++) {
+//     arr[i]= function () {
+//       // console.log('we are in func'+i)
+//       alert(i)
+//     }
+//   }
+//   return arr
+// }
+// var i = 100
+// var arr = FunctionArray(i)
+// arr[1]()
+// console.log(arr[0]())
+
+// let user = {
+//   firstName: "Вася"
+// };
+//
+// function func() {
+//   alert(this.firstName);
+// }
+//
+// let funcUser = func.bind(user);
+// console.log(funcUser())
+
 const todoInput = document.getElementById('todo-input')
 const btnAddTodo = document.getElementById('add-todo')
 const todoList = document.getElementById('todos-list')
