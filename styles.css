@@ -52,11 +52,6 @@ body{
     padding: 5px 20px;
 }
 
-/*.add-todo:focus {*/
-/*    color: #ffffff;*/
-/*    background-color: #1b1e21;*/
-/*}*/
-
 .add-todo:hover {
     color: #ffffff;
     background-color: #1b1e21;
@@ -90,6 +85,11 @@ body{
     color: #ffffff;
     position: absolute;
     right: 10px;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
 }
 
 
