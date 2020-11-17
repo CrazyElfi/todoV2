@@ -8,17 +8,18 @@ html {
 *::after{
     box-sizing: inherit;
 }
+
 body{
     margin: 0;
     padding: 0;
     font: 16px 'Caveat', cursive;
     color: #1b1e21;
-    height: 100vh
 }
 
 .container{
     max-width: 80vw;
     min-width: 40vw;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 0;
     background-color: #c7efd0;
@@ -109,7 +110,6 @@ body{
     justify-content: center;
     outline: none;
 }
-
 
 .btn svg {
     width: 10px;
