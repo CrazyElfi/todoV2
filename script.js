@@ -153,23 +153,16 @@ function liftUpTodo (id) {
   const todosSting = localStorage.getItem('todos')
   const todos = JSON.parse(todosSting)
 
-
-  console.log('todos prev', todos)
-
   for (let i = 0; i < todos.length; i++) {
     if (todos[i].id === id) {
       let removed = (todos.splice(i, 1))[0]
-      console.log('removed', removed)
       let position = i - 1
-      console.log('i', i)
-      console.log('position', position)
       todos.splice(position, 0, removed)
-      console.log('todos', todos)
-
       break
     }
   }
   localStorage.setItem('todos', JSON.stringify(todos))
+  reDrawFromLocalStorage()
 }
 
 function letDownTodo (id) {
@@ -185,5 +178,5 @@ function letDownTodo (id) {
     }
   }
   localStorage.setItem('todos', JSON.stringify(todos))
-
+  reDrawFromLocalStorage()
 }
